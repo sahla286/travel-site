@@ -264,6 +264,9 @@ nav .fa-bars{
         padding: 100px 7% 0;
         background: #000;
         text-align: right;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
     nav .nav-links li{
         margin: 10px 0;
@@ -274,7 +277,7 @@ nav .fa-bars{
         display: inline-block;
     }
     nav .fa-bars{
-        display: none;
+        display: block;
         position: fixed;
         top: 4%;
         right: 7%;
@@ -282,7 +285,7 @@ nav .fa-bars{
         font-size: 28px;
     }
     .active::after{
-        left: -40%;
+        left: -40px;
         transform: translate(0,-50%);
         bottom: 50%;
     }
